@@ -1,0 +1,22 @@
+tar cvf
+gua zai can2
+gps change 8h
+///////2017-5-11////////
+delet useless sourcecode
+use JIAODA deal.
+used in tr. case9_new and case8-------test finish
+change mysocketcan.h
+
+//////2017-5-18/////////
+test: only  mileage and energe is right
+mod1:  use can9new&case8 code but add this two date
+mod2:  delet qingda energe data----same to case9new&case8
+
+/*******************************2018-05-05**************************************/
+for twtr new function need
+1.add to get ntp server time in process persist connecting
+2.add to update new gx4g from static server port by ftp
+//2018-05-07
+modify fisrt initial and config info use stok
+//2018-05-08
+add update config info

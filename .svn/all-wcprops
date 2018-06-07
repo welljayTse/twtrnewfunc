@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb
+END
+error.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb/error.h
+END
+usb.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb/usb.h
+END
+linux.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb/linux.c
+END
+testlibusb.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb/testlibusb.c
+END
+descriptors.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb/descriptors.c
+END
+linux.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb/linux.h
+END
+usbi.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb/usbi.h
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb/error.c
+END
+usb.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb/usb.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb/Makefile
+END
+testbulk.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/soft03/!svn/ver/143/IPC6410/AppOld/6SXZ-60LD2/src/libusb/testbulk.c
+END

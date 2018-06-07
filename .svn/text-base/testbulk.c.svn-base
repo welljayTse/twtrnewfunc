@@ -1,0 +1,126 @@
+/* testbulk.c
+ *
+ * Test the bulk transfer of Cypress FX2
+ *
+ * WU Ming start this file on 2010/08/03
+ */
+
+#include <stdio.h>
+#include <strings.h>
+#include <sys/time.h>
+
+#include "usb.h"
+
+/* the device's vendor and product id */
+#define MY_VID   0x0754
+#define MY_PID   0x1002
+
+/* the device's endpoints */
+#define EP_IN    0x82
+
+#define BUF_SIZE 1024000
+#define ONE_K    1024000
+#define N_K      40
+
+usb_dev_handle *open_dev(void)
+{
+	struct usb_bus *bus;
+	struct usb_device *dev;
+
+	for (bus = usb_get_busses(); bus; bus = bus->next) {
+		for (dev = bus->devices; dev; dev = dev->next) {
+			if (dev->descriptor.idVendor == MY_VID && dev->descriptor.idProduct == MY_PID) {
+//				printf("debug>>> vendor id is 0x%04x, product id is 0x%04x\n", dev->descriptor.idVendor, dev->descriptor.idProduct);
+				return usb_open(dev);
+			}
+		}
+	}
+
+	return 0;
+}
+
+int main(void)
+{
+	usb_dev_handle *dev = NULL; /* the device handle */
+	unsigned char buf[BUF_SIZE];
+	long counter_read = 0;
+	int bytes_read = 0;
+	int i, j;
+	int n;
+	struct timeval tv1, tv2;
+	long long usec;
+
+/* init device */
+	usb_init(); /* initialize the library */
+
+	usb_find_busses();  /* find all busses */
+	usb_find_devices(); /* find all connected devices */
+
+	if (!(dev = open_dev())) {
+		fprintf(stderr, "error>>> device not found!\n");
+		return 0;
+	}
+
+	if (usb_set_configuration(dev, 1) < 0) {
+		fprintf(stderr, "error>>> setting config 1 failed\n");
+		usb_close(dev);
+		return 0;
+	}
+
+	if (usb_claim_interface(dev, 0) < 0) {
+		fprintf(stderr, "error>>> claiming interface 0 failed\n");
+		usb_close(dev);
+		return 0;
+	}
+
+/* get time before read */
+	gettimeofday(&tv1, NULL);
+
+/* read */
+	for(n = 0; n < (N_K*ONE_K)/BUF_SIZE; n++) {
+		bzero(buf, BUF_SIZE);
+
+		bytes_read = usb_bulk_read(dev, EP_IN, buf, BUF_SIZE, 1000);
+		if (bytes_read != BUF_SIZE) {
+			fprintf(stderr, "error>>> bulk read failed\n");
+			return 0;
+		}
+
+		counter_read++;
+
+#if 0
+		printf("packet: %ld\n", counter_read);
+		for (i = 0; i < sizeof(buf)/32; i++) {
+			printf("%04d :", 32*i+1);
+			for (j = 32*i; j < 32*i+32; j++) {
+				if (j%2 == 0) {
+					printf(" ");
+				}
+				printf("%02x", buf[j]);
+			}
+			printf("\n");
+		}
+#endif
+
+	}
+
+/* get time after read */
+	gettimeofday(&tv2, NULL);
+
+/* get spent time */
+	usec =  tv2.tv_sec*1000000+tv2.tv_usec;
+	usec -= tv1.tv_sec*1000000+tv1.tv_usec;
+
+/* print result */
+	printf("read %d bytes in %ld seconds and %ld microseconds. rate of %ld bytes/second\n",
+		N_K*ONE_K, (long)usec/1000000, (long)usec%1000000, (long)(((long long)N_K*ONE_K*1000000)/usec));
+	fflush(stdout);
+	
+/* free device */
+	usb_release_interface(dev, 0);
+
+	usb_close(dev);
+
+/* return */
+	return 1;
+}

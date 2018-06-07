@@ -1,0 +1,391 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AF_CAN	mysocketcan.h	19;"	d
+AR	Makefile	/^AR = $(CROSS)ar cr$/;"	m
+BMS_CAN_BAUD	gx4g.h	33;"	d
+BMU_CELL_CNT	gx4g.h	31;"	d
+BMU_MAX_SERNUM	gx4g.h	30;"	d
+BMU_TEMP_CNT	gx4g.h	32;"	d
+CAR_INFO_ENDABLE	gx4g.h	38;"	d
+CAR_INFO_UPLOAD_TIME	gx4g.h	42;"	d
+CC	Makefile	/^CC = $(CROSS)gcc$/;"	m
+CELL_INFO_ENDABLE	gx4g.h	37;"	d
+CELL_INFO_UPLOAD_TIME	gx4g.h	41;"	d
+CFLAGS	Makefile	/^CFLAGS = -O2$/;"	m
+CID_CELL_INFO	my4gmodule.h	14;"	d
+CID_EXTRM_INFO	my4gmodule.h	13;"	d
+CID_GPS_INFO	my4gmodule.h	15;"	d
+CONFIG_FILE_PATH	gx4g.h	19;"	d
+CROSS	Makefile	/^CROSS = arm-fsl-linux-gnueabi-$/;"	m
+DATA_LEN	myuart.c	21;"	d	file:
+DEV_NAME	gx4g.h	17;"	d
+DIR_OFFLINE_NAME	mystorage.c	28;"	d	file:
+DIR_ONLINE_NAME	mystorage.c	27;"	d	file:
+DirCheckFileCounts	mystorage.c	/^int DirCheckFileCounts(int type)$/;"	f
+EXTREM_INFO_ENDABLE	gx4g.h	39;"	d
+EXTRM_INFO_UPLOAD_TIME	gx4g.h	44;"	d
+FDISK_COMMAND	mystorage.c	36;"	d	file:
+FLAG_FILE	mystorage.c	40;"	d	file:
+FORMAT_COMMAND	mystorage.c	35;"	d	file:
+FORMAT_FLAG_NAME	mystorage.c	26;"	d	file:
+FSCHECK_COMMAND	mystorage.c	31;"	d	file:
+GPIO_PATH	gx4g.h	22;"	d
+GPS_INFO_ENDABLE	gx4g.h	40;"	d
+GPS_INFO_UPLOAD_TIME	gx4g.h	43;"	d
+GX4G	Makefile	/^GX4G = gx4g	#可执行文件$/;"	m
+GX4G_H	gx4g.h	2;"	d
+GX4G_OBJ	Makefile	/^GX4G_OBJ = gx4g.o \\$/;"	m
+GX4G_SM_CONFIGURE	gx4g.h	308;"	d
+GX4G_SM_MAIN	gx4g.h	306;"	d
+GX4G_SM_OVER	gx4g.h	310;"	d
+GX4G_SM_RUN	gx4g.h	307;"	d
+GXGK_UART_NAME	gx4g.h	12;"	d
+GetLocalTime	my4gmodule.c	/^void GetLocalTime()$/;"	f
+HOST	myftp.h	10;"	d
+INF1	mysocketcan.h	53;"	d
+INF10	mysocketcan.h	61;"	d
+INF11	mysocketcan.h	62;"	d
+INF12	mysocketcan.h	63;"	d
+INF13	mysocketcan.h	64;"	d
+INF14	mysocketcan.h	65;"	d
+INF15	mysocketcan.h	66;"	d
+INF16	mysocketcan.h	67;"	d
+INF17	mysocketcan.h	68;"	d
+INF18	mysocketcan.h	69;"	d
+INF19	mysocketcan.h	70;"	d
+INF20	mysocketcan.h	71;"	d
+INF3	mysocketcan.h	54;"	d
+INF4	mysocketcan.h	55;"	d
+INF5	mysocketcan.h	56;"	d
+INF6	mysocketcan.h	57;"	d
+INF7	mysocketcan.h	58;"	d
+INF8	mysocketcan.h	59;"	d
+INF9	mysocketcan.h	60;"	d
+INT16U	gx4g.h	/^typedef unsigned short  INT16U;$/;"	t
+INT32U	gx4g.h	/^typedef unsigned int    INT32U;$/;"	t
+INT8U	gx4g.h	/^typedef unsigned char   INT8U;$/;"	t
+IP	my4gmodule.c	21;"	d	file:
+IP	my4gmodule.c	24;"	d	file:
+IP	my4gmodule.c	27;"	d	file:
+LD	Makefile	/^LD = $(CROSS)ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = #-elf2flat$/;"	m
+LDLIBS	Makefile	/^LDLIBS = -lm# -lz$/;"	m
+LENGTH	my4gmodule.c	15;"	d	file:
+MAX_LINE	myconfig.c	11;"	d	file:
+MAX_TOTAL_CELL	gx4g.h	34;"	d
+MOUNT_COMMAND	mystorage.c	32;"	d	file:
+MY4GMODULE_H	my4gmodule.h	9;"	d
+MYFTP_H	myftp.h	8;"	d
+MYGPS_H	mygps.h	2;"	d
+MYSOCKET_H	mysocketcan.h	9;"	d
+MYUART_H	myuart.h	8;"	d
+MY_PARAMS	gx4g.h	18;"	d
+OFFSET	myftp.h	19;"	d
+PATH	myftp.h	17;"	d
+PF_CAN	mysocketcan.h	22;"	d
+PORT	my4gmodule.c	20;"	d	file:
+PORT	my4gmodule.c	23;"	d	file:
+PORT	my4gmodule.c	26;"	d	file:
+PORT	myftp.h	11;"	d
+PWD	myftp.h	13;"	d
+RANLIB	Makefile	/^RANLIB = $(CROSS)ranlib$/;"	m
+RESET_PATH	gx4g.h	23;"	d
+RETRYCOUNT	mysocketcan.c	19;"	d	file:
+ReissueInfoSend	mystorage.c	/^int ReissueInfoSend(int len, int type)$/;"	f
+SD_CONFIG_FILE	myconfig.c	10;"	d	file:
+SLC	my4gmodule.c	17;"	d	file:
+STOP	myftp.h	20;"	d
+STORNAME	myftp.h	15;"	d
+STRIP	Makefile	/^STRIP = $(CROSS)strip$/;"	m
+SYSTEM_CONFIG_FILE	myconfig.c	9;"	d	file:
+TARGET	gx4g.h	13;"	d
+TEMPCHKPOT	gx4g.h	36;"	d
+TOUCH_COMMAND	mystorage.c	37;"	d	file:
+UMOUNT_COMMAND	mystorage.c	34;"	d	file:
+USER	myftp.h	12;"	d
+USIN_DET_PATH	gx4g.h	24;"	d
+VALUE_1	gx4g.h	25;"	d
+VTGCHKPOT	gx4g.h	35;"	d
+__CONFIGFILE_H__	myconfig.h	6;"	d
+__STORAGE_CARD_TOOLS_H__	mystorage.h	6;"	d
+addr_remote	gx4g.h	/^	struct   sockaddr_in addr_remote;$/;"	m	struct:__anon9	typeref:struct:__anon9::sockaddr_in
+addrlen	gx4g.h	/^	socklen_t  addrlen;$/;"	m	struct:__anon9
+alarmInfo	gx4g.h	/^	INT8U   alarmInfo[8];$/;"	m	struct:__anon5
+alarminfo	gx4g.h	/^	INT8U	alarminfo[8];$/;"	m	struct:__anon4
+alarminfo	gx4g.h	/^	INT8U    alarminfo[8];$/;"	m	struct:__anon2
+aliveflag	gx4g.h	/^	int aliveflag;\/\/和服务端保持心跳请求应答的标识$/;"	m	struct:__anon9
+averagecellvoltage	gx4g.h	/^	INT8U   averagecellvoltage[2];$/;"	m	struct:__anon4
+averagetemp	gx4g.h	/^	INT8U 	averagetemp;$/;"	m	struct:__anon4
+avertemp	gx4g.h	/^	INT8U   avertemp[2];   \/\/pinjun wendu$/;"	m	struct:__anon6
+batterytv	gx4g.h	/^	INT8U   batterytv[2];$/;"	m	struct:__anon4
+batterytv	gx4g.h	/^	INT8U   batterytv[2];$/;"	m	struct:__anon6
+bmu_cell_cnt	gx4g.c	/^INT8U bmu_cell_cnt[BMU_CELL_CNT]={0};$/;"	v
+bmu_cell_num_start	gx4g.c	/^INT16U bmu_cell_num_start[BMU_CELL_CNT]={0};$/;"	v
+bmu_cnt	mysocketcan.c	/^unsigned char bmu_cnt=0;$/;"	v
+bmucnt	gx4g.h	/^	INT8U	bmucnt;    $/;"	m	struct:__anon7
+bmucount	gx4g.h	/^   	 INT8U           bmucount;$/;"	m	struct:__anon8
+bwtaddr	gx4g.h	/^	unsigned char   bwtaddr[8];$/;"	m	struct:__anon8
+bwtversion	gx4g.h	/^	unsigned char   bwtversion;$/;"	m	struct:__anon8
+calc_directory_size	mystorage.c	/^int calc_directory_size(char *path)$/;"	f
+calc_sdcard_freesize	mystorage.c	/^int calc_sdcard_freesize(char *partition_path)$/;"	f
+calc_sdcard_totalsize	mystorage.c	/^int calc_sdcard_totalsize(char *partition_path)$/;"	f
+can_data_deal	mysocketcan.c	/^void can_data_deal(struct can_frame *fr)$/;"	f
+can_fd	gx4g.h	/^	int      can_fd;$/;"	m	struct:__anon9
+can_read	mysocketcan.c	/^int can_read(int fd)$/;"	f
+can_remote_config	mysocketcan.c	/^int can_remote_config(int fd,unsigned char *str)$/;"	f
+can_remote_config_test	mysocketcan.c	/^int can_remote_config_test(int fd)$/;"	f
+can_time_count	gx4g.h	/^	int	 can_time_count;$/;"	m	struct:__anon9
+caninit	gx4g.c	/^void caninit()$/;"	f
+car_info	gx4g.h	/^} car_info;$/;"	t	typeref:struct:__anon5
+car_save_freq	gx4g.h	/^   	 INT8U           car_save_freq;$/;"	m	struct:__anon8
+car_send_freq	gx4g.h	/^   	 INT8U           car_send_freq;$/;"	m	struct:__anon8
+carinfo_send_flag	gx4g.h	/^	int	carinfo_send_flag;$/;"	m	struct:__anon9
+caseenable	gx4g.h	/^    INT32U   caseenable;$/;"	m	struct:__anon2
+caseenable	mysocketcan.c	/^static unsigned short caseenable[10] = {0,32,64,112,144,180,216,252,288,336};\/\/jiu 9 xiang che$/;"	v	file:
+casetemp	gx4g.h	/^	INT8U 	 casetemp[MAX_TOTAL_CELL];$/;"	m	struct:__anon2
+cell_cnt_per_bmu	gx4g.c	/^INT16U cell_cnt_per_bmu[BMU_CELL_CNT]={0};$/;"	v
+cell_info	gx4g.h	/^} cell_info;$/;"	t	typeref:struct:__anon2
+cell_save_freq	gx4g.h	/^   	 INT16U           cell_save_freq;$/;"	m	struct:__anon8
+cell_send_freq	gx4g.h	/^   	 INT16U           cell_send_freq;$/;"	m	struct:__anon8
+cell_total_cnt	mysocketcan.c	/^unsigned int cell_total_cnt = 24; $/;"	v
+cell_vtg1	mysocketcan.c	/^unsigned short cell_vtg1,cell_vtg2,cell_vtg3,cell_vtg4;$/;"	v
+cell_vtg2	mysocketcan.c	/^unsigned short cell_vtg1,cell_vtg2,cell_vtg3,cell_vtg4;$/;"	v
+cell_vtg3	mysocketcan.c	/^unsigned short cell_vtg1,cell_vtg2,cell_vtg3,cell_vtg4;$/;"	v
+cell_vtg4	mysocketcan.c	/^unsigned short cell_vtg1,cell_vtg2,cell_vtg3,cell_vtg4;$/;"	v
+cellchkpt	gx4g.h	/^    INT8U 	 cellchkpt[2];$/;"	m	struct:__anon2
+cellcntperbmu	gx4g.h	/^	unsigned char   cellcntperbmu[12];$/;"	m	struct:__anon8
+cellinfo_send_flag	gx4g.h	/^	int	cellinfo_send_flag;$/;"	m	struct:__anon9
+cellseries	gx4g.h	/^	INT8U	cellseries;    $/;"	m	struct:__anon7
+cellvtg	gx4g.h	/^	INT8U    cellvtg[MAX_TOTAL_CELL*2];$/;"	m	struct:__anon2
+chgctl	gx4g.h	/^	INT8U	chgctl;         $/;"	m	struct:__anon7
+chgwarmctl	gx4g.h	/^	INT8U	chgwarmctl;     $/;"	m	struct:__anon7
+chksumgen	my4gmodule.c	/^unsigned char chksumgen (const unsigned char *source, unsigned int len)$/;"	f
+cog	gx4g.h	/^	INT8U	cog[2];	$/;"	m	struct:__anon3
+cog	gx4g.h	/^	INT8U	cog[2];	$/;"	m	struct:__anon6
+config_info	gx4g.h	/^} config_info;$/;"	t	typeref:struct:__anon8
+connect_server	myftp.c	/^int connect_server( char *host, int port )$/;"	f
+count	gx4g.h	/^	int      count;$/;"	m	struct:__anon1
+count	gx4g.h	/^	int      count;$/;"	m	struct:__anon9
+create_datasock	myftp.c	/^int create_datasock( int ctrl_sock )$/;"	f
+cstchgcur	gx4g.h	/^	INT8U	cstchgcur[2];   $/;"	m	struct:__anon7
+current	gx4g.h	/^	INT8U   current[2];    	 $/;"	m	struct:__anon4
+current	gx4g.h	/^	INT8U   current[2];    	 $/;"	m	struct:__anon6
+d_sock	gx4g.h	/^	int d_sock;\/\/ftp升级句柄$/;"	m	struct:__anon9
+dealSigAlarm	my4gmodule.c	/^static void dealSigAlarm(int signo)$/;"	f	file:
+directory	mystorage.c	/^char* directory[] = {"\/media\/mmcblk0p1\/ONLINE\/",$/;"	v
+dump_info	mystorage.c	/^int dump_info( char *path,int len, int type)$/;"	f
+errcode	mysocketcan.h	26;"	d
+errout	mysocketcan.h	25;"	d
+extrem_save_freq	gx4g.h	/^   	 INT8U           extrem_save_freq;$/;"	m	struct:__anon8
+extrem_send_freq	gx4g.h	/^   	 INT8U           extrem_send_freq;\/\/frpuence use 1\/s$/;"	m	struct:__anon8
+extrm_info	gx4g.h	/^} extrm_info;$/;"	t	typeref:struct:__anon4
+extrminfo_send_flag	gx4g.h	/^	int	extrminfo_send_flag;$/;"	m	struct:__anon9
+find_oldest_file_and_delete	mystorage.c	/^int find_oldest_file_and_delete (char *directory)$/;"	f
+find_oldest_file_and_move	mystorage.c	/^int find_oldest_file_and_move (char *directory,int len,int type)$/;"	f
+ftp_cdup	myftp.c	/^int ftp_cdup( int c_sock )$/;"	f
+ftp_connect	myftp.c	/^int ftp_connect( char *host, int port, char *user, char *pwd )$/;"	f
+ftp_cwd	myftp.c	/^int ftp_cwd( int c_sock, char *path )$/;"	f
+ftp_deletefile	myftp.c	/^int ftp_deletefile( int c_sock, char *s )$/;"	f
+ftp_deletefolder	myftp.c	/^int ftp_deletefolder( int c_sock, char *s )$/;"	f
+ftp_fd	gx4g.h	/^	int 	 ftp_fd;$/;"	m	struct:__anon9
+ftp_list	myftp.c	/^int ftp_list( int c_sock, char *path, void **data, unsigned long long *data_len)$/;"	f
+ftp_mkd	myftp.c	/^int ftp_mkd( int c_sock, char *path )$/;"	f
+ftp_pasv_connect	myftp.c	/^int ftp_pasv_connect( int c_sock )$/;"	f
+ftp_quit	myftp.c	/^int ftp_quit( int c_sock)$/;"	f
+ftp_renamefile	myftp.c	/^int ftp_renamefile( int c_sock, char *s, char *d )$/;"	f
+ftp_retrfile	myftp.c	/^int ftp_retrfile( int c_sock, char *s, char *d ,unsigned long long *stor_size, int *stop)$/;"	f
+ftp_sendcmd	myftp.c	/^int ftp_sendcmd( int sock, char *cmd )$/;"	f
+ftp_sendcmd_re	myftp.c	/^int ftp_sendcmd_re( int sock, char *cmd, void *re_buf, ssize_t *len)$/;"	f
+ftp_storfile	myftp.c	/^int ftp_storfile( int c_sock, char *s, char *d ,unsigned long long *stor_size, int *stop)$/;"	f
+ftp_type	myftp.c	/^int ftp_type( int c_sock, char mode )$/;"	f
+ftp_update	myftp.c	/^int ftp_update()$/;"	f
+gov_info	gx4g.h	/^} gov_info;$/;"	t	typeref:struct:__anon6
+govinfo_send_flag	gx4g.h	/^	int	govinfo_send_flag;$/;"	m	struct:__anon9
+gps_fd	gx4g.h	/^	int      gps_fd;$/;"	m	struct:__anon9
+gps_info	gx4g.h	/^} gps_info;$/;"	t	typeref:struct:__anon3
+gps_init	gx4g.c	/^void gps_init()$/;"	f
+gps_recv_flag	gx4g.h	/^	int      gps_recv_flag;$/;"	m	struct:__anon9
+gps_save_freq	gx4g.h	/^   	 INT8U           gps_save_freq;$/;"	m	struct:__anon8
+gps_send_freq	gx4g.h	/^   	 INT8U           gps_send_freq;$/;"	m	struct:__anon8
+gpsinfo_send_flag	gx4g.h	/^	int	gpsinfo_send_flag;$/;"	m	struct:__anon9
+gpsinfoget	mygps.c	/^unsigned char gpsinfoget(int fd)$/;"	f
+gs_carinfo_recv	gx4g.h	/^	car_info gs_carinfo_recv;$/;"	m	struct:__anon9
+gs_carinfo_send	gx4g.h	/^	car_info gs_carinfo_send;$/;"	m	struct:__anon9
+gs_cellinfo_recv	gx4g.h	/^	cell_info gs_cellinfo_recv;$/;"	m	struct:__anon9
+gs_cellinfo_send	gx4g.h	/^	cell_info gs_cellinfo_send;$/;"	m	struct:__anon9
+gs_config_info	gx4g.h	/^    config_info gs_config_info;$/;"	m	struct:__anon9
+gs_extrminfo_recv	gx4g.h	/^	extrm_info gs_extrminfo_recv;$/;"	m	struct:__anon9
+gs_extrminfo_send	gx4g.h	/^	extrm_info gs_extrminfo_send;$/;"	m	struct:__anon9
+gs_govinfo_recv	gx4g.h	/^	gov_info gs_govinfo_recv;$/;"	m	struct:__anon9
+gs_govinfo_send	gx4g.h	/^	gov_info gs_govinfo_send;$/;"	m	struct:__anon9
+gs_gpsinfo_recv	gx4g.h	/^	gps_info gs_gpsinfo_recv;$/;"	m	struct:__anon9
+gs_gpsinfo_send	gx4g.h	/^	gps_info gs_gpsinfo_send;$/;"	m	struct:__anon9
+gs_gpsrecvbuf	mygps.c	/^unsigned char gs_gpsrecvbuf[100];$/;"	v
+gs_recvbuf	gx4g.h	/^	unsigned char gs_recvbuf[512];$/;"	m	struct:__anon9
+gs_remotecfg_recv	gx4g.h	/^	remotecfg_info gs_remotecfg_recv;$/;"	m	struct:__anon9
+gs_remotecfg_recvflag	gx4g.h	/^	int      gs_remotecfg_recvflag;$/;"	m	struct:__anon9
+gs_remotecfg_send	gx4g.h	/^	remotecfg_info gs_remotecfg_send;$/;"	m	struct:__anon9
+gs_remotecfg_sendall	gx4g.h	/^	remotecfg_info gs_remotecfg_sendall;$/;"	m	struct:__anon9
+gs_transferbuf	gx4g.h	/^	unsigned char gs_transferbuf[1024];$/;"	m	struct:__anon9
+gxgk_close_serial	myuart.c	/^void gxgk_close_serial(char *serialname)$/;"	f
+gxgk_free	gx4g.c	/^void gxgk_free()$/;"	f
+gxgk_init	gx4g.c	/^void gxgk_init()$/;"	f
+gxgk_open_serial	myuart.c	/^int gxgk_open_serial(char *serialname)$/;"	f
+gxgk_read_serial	myuart.c	/^int gxgk_read_serial(int fd, char *buf, int len) $/;"	f
+gxgk_share_params_init	gx4g.c	/^void gxgk_share_params_init()$/;"	f
+gxgk_stru_share	gx4g.h	/^}gxgk_stru_share;$/;"	t	typeref:struct:__anon9
+gxgk_write_serial	myuart.c	/^int gxgk_write_serial(int fd, char buf[], int len)$/;"	f
+handle	gx4g.h	/^	int handle;\/\/远程升级本地临时文件的句柄$/;"	m	struct:__anon9
+handle_err_frame	mysocketcan.c	/^void handle_err_frame(struct can_frame *fr)$/;"	f
+heartbeat_check_count	gx4g.h	/^	int heartbeat_check_count; \/\/set 3,if less than 0 means heartbeat break$/;"	m	struct:__anon9
+heartbeat_send_flag	gx4g.h	/^	int heartbeat_send_flag;$/;"	m	struct:__anon9
+hofullcur	gx4g.h	/^	INT8U	hofullcur[2];   $/;"	m	struct:__anon7
+hofullvolt	gx4g.h	/^	INT8U	hofullvolt[2];  $/;"	m	struct:__anon7
+hogain	gx4g.h	/^	INT8U	hogain[2];      $/;"	m	struct:__anon7
+hsoc	gx4g.h	/^	INT8U	hsoc[2];   $/;"	m	struct:__anon7
+ht	gx4g.h	/^	INT8U	ht[2];     $/;"	m	struct:__anon7
+hv	gx4g.h	/^	INT8U	hv[2];     $/;"	m	struct:__anon7
+imtcon	gx4g.h	/^	INT8U   imtcon[2];    	  $/;"	m	struct:__anon5
+lat	gx4g.h	/^	INT8U	lat[4];	$/;"	m	struct:__anon3
+lat	gx4g.h	/^	INT8U	lat[4];	$/;"	m	struct:__anon6
+len	gx4g.h	/^	INT8U	len;       $/;"	m	struct:__anon3
+len	gx4g.h	/^	INT8U   len;$/;"	m	struct:__anon4
+len	gx4g.h	/^	INT8U   len;$/;"	m	struct:__anon5
+len	gx4g.h	/^	INT8U   len;$/;"	m	struct:__anon6
+load_config	myconfig.c	/^int load_config(const char *path)$/;"	f
+local_update	myftp.c	/^void local_update()$/;"	f
+localtime	gx4g.h	/^	int localtime[6];\/\/系统时间$/;"	m	struct:__anon9
+login_server	myftp.c	/^int login_server( int sock, char *user, char *pwd )$/;"	f
+lon	gx4g.h	/^        INT8U   lon[4];	$/;"	m	struct:__anon6
+lon	gx4g.h	/^    INT8U   lon[4];	$/;"	m	struct:__anon3
+longsunginit	gx4g.c	/^void longsunginit(void)$/;"	f
+lsoc	gx4g.h	/^	INT8U	lsoc[2];   $/;"	m	struct:__anon7
+lt	gx4g.h	/^	INT8U	lt[2];     $/;"	m	struct:__anon7
+lv	gx4g.h	/^	INT8U	lv[2];     $/;"	m	struct:__anon7
+main	gx4g.c	/^int main(int argc, char ** argv[]) $/;"	f
+make_specific_directory	mystorage.c	/^static int make_specific_directory()$/;"	f	file:
+maxcellvolt	gx4g.h	/^	INT8U   maxcellvolt[2];	      	 $/;"	m	struct:__anon4
+maxcellvoltno	gx4g.h	/^	INT8U	maxcellvoltno[2];$/;"	m	struct:__anon4
+maxchgcur	gx4g.h	/^	INT8U	maxchgcur[2];   $/;"	m	struct:__anon7
+maxchgpwr	gx4g.h	/^	INT8U	maxchgpwr[2];   $/;"	m	struct:__anon7
+maxchgvolt	gx4g.h	/^	INT8U	maxchgvolt[2];  $/;"	m	struct:__anon7
+maxdchgcur	gx4g.h	/^	INT8U	maxdchgcur[2];  $/;"	m	struct:__anon7
+maxdchgpwr	gx4g.h	/^	INT8U	maxdchgpwr[2];  $/;"	m	struct:__anon7
+maxtempera	gx4g.h	/^ 	INT8U   maxtempera;    	 $/;"	m	struct:__anon4
+maxtemperano	gx4g.h	/^	INT8U   maxtemperano; $/;"	m	struct:__anon4
+mincellvolt	gx4g.h	/^	INT8U   mincellvolt[2];  $/;"	m	struct:__anon4
+mincellvoltno	gx4g.h	/^	INT8U   mincellvoltno[2];       $/;"	m	struct:__anon4
+mindchgvolt	gx4g.h	/^	INT8U	mindchgvolt[2]; $/;"	m	struct:__anon7
+mintempera	gx4g.h	/^	INT8U	mintempera;	$/;"	m	struct:__anon4
+mintemperano	gx4g.h	/^	INT8U   mintemperano;$/;"	m	struct:__anon4
+modenable	gx4g.h	/^    INT32U	 modenable[16];$/;"	m	struct:__anon2
+motorspeed	gx4g.h	/^	INT8U   motorspeed[2]; \/\/dianji zhuansu$/;"	m	struct:__anon6
+motorspeed	gx4g.h	/^	INT8U   motorspeed[2];$/;"	m	struct:__anon5
+mttorque	gx4g.h	/^	INT8U   mttorque[2];        $/;"	m	struct:__anon5
+myerr	mysocketcan.h	27;"	d
+mymd5check	myftp.c	/^void mymd5check()$/;"	f
+mytempglobal	gx4g.c	/^struct_temp_global 	mytempglobal;$/;"	v
+netroute	gx4g.c	/^void netroute(void)$/;"	f
+nonimalcap	gx4g.h	/^	INT8U	nonimalcap[2];  $/;"	m	struct:__anon7
+ntp_update	gx4g.c	/^void ntp_update()$/;"	f
+ocv	gx4g.h	/^	INT8U	ocv[2];    $/;"	m	struct:__anon7
+odv	gx4g.h	/^	INT8U	odv[2];         $/;"	m	struct:__anon7
+outtemp	gx4g.h	/^	INT8U   outtemp;       \/\/waijie wendu  $/;"	m	struct:__anon6
+pack_send	mysocketcan.c	/^int pack_send(int cmd, int fd,unsigned char *str)$/;"	f
+pack_send_retry	mysocketcan.c	/^int pack_send_retry(int cmd,int fd,unsigned char *str)$/;"	f
+pack_send_retry_test	mysocketcan.c	/^int pack_send_retry_test(int cmd,int fd)$/;"	f
+pack_send_test	mysocketcan.c	/^int pack_send_test(int cmd, int fd)$/;"	f
+peer	gx4g.h	/^	struct   sockaddr_in  peer; $/;"	m	struct:__anon9	typeref:struct:__anon9::sockaddr_in
+pid_data_send	gx4g.h	/^    	int      pid_data_send ;$/;"	m	struct:__anon9
+pid_info_get	gx4g.h	/^	int      pid_info_get;$/;"	m	struct:__anon9
+pid_ping_connect	gx4g.h	/^	int      pid_ping_connect;$/;"	m	struct:__anon9
+pid_server_recv	gx4g.h	/^	int      pid_server_recv;$/;"	m	struct:__anon9
+pid_time_count	gx4g.h	/^    	int      pid_time_count;$/;"	m	struct:__anon9
+ping	gx4g.c	/^int ping()$/;"	f
+pppdial	gx4g.c	/^void pppdial(void)$/;"	f
+print_frame	mysocketcan.c	/^void print_frame(struct can_frame *fr)$/;"	f
+psh	gx4g.c	/^gxgk_stru_share *psh;\/\/ DON'T MODIFY IT$/;"	v
+recv_flag	gx4g.h	/^	int      recv_flag;$/;"	m	struct:__anon9
+recv_flag_inf10	gx4g.h	/^	int recv_flag_inf10;$/;"	m	struct:__anon9
+recv_flag_inf18	gx4g.h	/^	int recv_flag_inf18;$/;"	m	struct:__anon9
+recv_flag_inf19	gx4g.h	/^	int recv_flag_inf19;$/;"	m	struct:__anon9
+recv_flag_inf3	gx4g.h	/^	int recv_flag_inf3;$/;"	m	struct:__anon9
+recv_flag_inf4	gx4g.h	/^	int recv_flag_inf4;$/;"	m	struct:__anon9
+recv_flag_inf5	gx4g.h	/^	int recv_flag_inf5;$/;"	m	struct:__anon9
+recv_flag_inf6	gx4g.h	/^	int recv_flag_inf6;$/;"	m	struct:__anon9
+recv_flag_inf7	gx4g.h	/^	int recv_flag_inf7;$/;"	m	struct:__anon9
+recv_flag_inf8	gx4g.h	/^	int recv_flag_inf8;$/;"	m	struct:__anon9
+recv_flag_inf9	gx4g.h	/^	int recv_flag_inf9;$/;"	m	struct:__anon9
+remaincap	gx4g.h	/^	INT8U	remaincap[2];   $/;"	m	struct:__anon7
+remainmile	gx4g.h	/^	INT8U   remainmile[2];	$/;"	m	struct:__anon5
+remotecfg_info	gx4g.h	/^}remotecfg_info;$/;"	t	typeref:struct:__anon7
+revstr	my4gmodule.c	/^char     revstr[];            		                 	\/\/ Receive buffer for byte2hexstr$/;"	v
+rings	gx4g.h	/^	INT8U   rings[2];         $/;"	m	struct:__anon5
+saveinfo	mystorage.c	/^int saveinfo(unsigned char *buf,int len,int type)$/;"	f
+sd	gx4g.h	/^	int      sd;$/;"	m	struct:__anon9
+sd_free_space	mystorage.c	/^int sd_free_space = 0;$/;"	v
+sdcard_dir_check	mystorage.c	/^int sdcard_dir_check()$/;"	f
+sdcard_format_check	mystorage.c	/^int sdcard_format_check()$/;"	f
+sdcard_info_check	mystorage.c	/^int sdcard_info_check()$/;"	f
+sdcard_rw_check	mystorage.c	/^int sdcard_rw_check()$/;"	f
+shine_led	gx4g.c	/^void shine_led()$/;"	f
+soc	gx4g.h	/^	INT8U   soc[2];	    	        $/;"	m	struct:__anon4
+soc	gx4g.h	/^	INT8U   soc[2];	    	 $/;"	m	struct:__anon6
+socket_connect	myftp.c	/^int socket_connect(char *host,int port)$/;"	f
+socketcan_init	mysocketcan.c	/^int socketcan_init()$/;"	f
+sockfd	gx4g.h	/^	int      sockfd;$/;"	m	struct:__anon9
+spd	gx4g.h	/^	INT8U	spd[2];	               	$/;"	m	struct:__anon3
+speed	gx4g.h	/^	INT8U   speed;$/;"	m	struct:__anon5
+speed	gx4g.h	/^	INT8U   speed;$/;"	m	struct:__anon6
+staticerrorchk	mysocketcan.c	/^void staticerrorchk(void)$/;"	f
+status_machine	gx4g.h	/^	int status_machine;$/;"	m	struct:__anon9
+storage_card_command	mystorage.c	/^static int storage_card_command(char * command)$/;"	f	file:
+storage_card_detect	mystorage.c	/^int storage_card_detect()$/;"	f
+storage_card_format	mystorage.c	/^int storage_card_format()$/;"	f
+storage_card_format_status	mystorage.c	/^int storage_card_format_status()$/;"	f
+storage_card_init	mystorage.c	/^int storage_card_init()$/;"	f
+string	gx4g.h	/^	unsigned char string[256];$/;"	m	struct:__anon9
+struct_temp_global	gx4g.h	/^}struct_temp_global; $/;"	t	typeref:struct:__anon1
+tcpinit	my4gmodule.c	/^void tcpinit()$/;"	f
+tempchkpt	gx4g.h	/^	INT8U	 tempchkpt[2];$/;"	m	struct:__anon2
+tempsub	gx4g.h	/^	INT8U   tempsub;    	        $/;"	m	struct:__anon4
+time	gx4g.h	/^	INT8U 	time[6];       $/;"	m	struct:__anon3
+time	gx4g.h	/^	INT8U 	time[6];       $/;"	m	struct:__anon6
+time	gx4g.h	/^	INT8U    time[6]; $/;"	m	struct:__anon2
+time	gx4g.h	/^	INT8U   time[6];    		 $/;"	m	struct:__anon4
+time	gx4g.h	/^	INT8U   time[6];         	$/;"	m	struct:__anon5
+tmtcon	gx4g.h	/^	INT8U   tmtcon;$/;"	m	struct:__anon5
+totalcap	gx4g.h	/^	INT8U	totalcap[2];    $/;"	m	struct:__anon7
+totalcellcnt	gx4g.h	/^   	 INT8U           totalcellcnt;$/;"	m	struct:__anon8
+totalmile	gx4g.h	/^	INT8U   totalmile[4];$/;"	m	struct:__anon5
+totalmile	gx4g.h	/^	INT8U   totalmile[4];$/;"	m	struct:__anon6
+totalusedenergy	gx4g.h	/^	INT8U   totalusedenergy[4];$/;"	m	struct:__anon5
+transfercontrl	my4gmodule.c	/^void transfercontrl(unsigned char *data, unsigned char *frame, unsigned short cid, unsigned short len)$/;"	f
+uart_get_byte	myuart.c	/^char uart_get_byte(int fd) $/;"	f
+uartgetstr	mygps.c	/^void uartgetstr(int fd)$/;"	f
+uartnum	gx4g.h	/^	int      uartnum;$/;"	m	struct:__anon1
+uartnum	gx4g.h	/^	int      uartnum;$/;"	m	struct:__anon9
+ubx_cmd01	mygps.c	/^const unsigned char ubx_cmd01[] = {0xB5,0x62,0x06,0x01,0x08,0x00,0xF0,0x05,0x01,0x00,0x01,0x01,0x01,0x01,0x09,0x56};\/\/VTG$/;"	v
+ubx_cmd02	mygps.c	/^const unsigned char ubx_cmd02[] = {0xB5,0x62,0x06,0x01,0x08,0x00,0xF0,0x00,0x01,0x00,0x01,0x01,0x01,0x01,0x04,0x33};\/\/GGA$/;"	v
+ubx_cmd03	mygps.c	/^const unsigned char ubx_cmd03[] = {0xB5,0x62,0x06,0x01,0x08,0x00,0xF0,0x02,0x01,0x00,0x01,0x01,0x01,0x01,0x06,0x41};\/\/GSA$/;"	v
+ubx_cmd04	mygps.c	/^const unsigned char ubx_cmd04[] = {0xB5,0x62,0x06,0x01,0x08,0x00,0xF0,0x03,0x01,0x00,0x01,0x01,0x01,0x01,0x07,0x48};\/\/GSV$/;"	v
+ubx_cmd05	mygps.c	/^const unsigned char ubx_cmd05[] = {0xB5,0x62,0x06,0x01,0x08,0x00,0xF0,0x01,0x01,0x00,0x01,0x01,0x01,0x01,0x05,0x3A};\/\/GLL$/;"	v
+ubx_cmd06	mygps.c	/^const unsigned char ubx_cmd06[] = {0xB5,0x62,0x06,0x01,0x08,0x00,0xF0,0x08,0x00,0x00,0x00,0x00,0x00,0x00,0x07,0x5B};\/\/ZDA$/;"	v
+ubx_cmd07	mygps.c	/^const unsigned char ubx_cmd07[] = {0xB5,0x62,0x06,0x16,0x08,0x00,0x00,0x01,0x01,0x00,0x00,0x00,0x00,0x00,0x26,0x97};\/\/DIS_SBAS$/;"	v
+ubx_cmd08	mygps.c	/^const unsigned char ubx_cmd08[] = {0xB5,0x62,0x06,0x24,0x24,0x00,0xFF,0xFF,0x04,0x03,0x00,0x00,0x00,0x00,0x10,0x27,$/;"	v
+ubxconfig	mygps.c	/^void ubxconfig(int fd)$/;"	f
+udpinit	my4gmodule.c	/^void udpinit()$/;"	f
+udprecv	my4gmodule.c	/^int udprecv(unsigned char revbuf[],unsigned int fd)$/;"	f
+udprecv_test	my4gmodule.c	/^int udprecv_test(unsigned char revbuf[],unsigned int fd)$/;"	f
+udpsend	my4gmodule.c	/^int udpsend(unsigned char sdbuf[],unsigned int len)$/;"	f
+ulsoc	gx4g.h	/^	INT8U	ulsoc[2];  $/;"	m	struct:__anon7
+update_config	myconfig.c	/^int update_config(const char *path)$/;"	f
+vtgsub	gx4g.h	/^	INT8U   vtgsub[2];    	       $/;"	m	struct:__anon4
+wait_flag	gx4g.h	/^	int      wait_flag;$/;"	m	struct:__anon9
+warmbrk	gx4g.h	/^	INT8U   warmbrk;$/;"	m	struct:__anon7
+writeLogLine	myconfig.c	/^static void writeLogLine(FILE *fp, const char *content)$/;"	f	file:
+ymdepth	gx4g.h	/^	INT8U   ymdepth;       \/\/youmen shendu  $/;"	m	struct:__anon6

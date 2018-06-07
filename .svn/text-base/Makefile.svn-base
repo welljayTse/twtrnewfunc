@@ -1,0 +1,73 @@
+# Makefile
+#
+# Makefile of libusb
+#
+# WU Ming start this file on 2010/08/03
+
+### build tools ###
+###################
+
+# cross compile prefix
+CROSS = /opt/FriendlyARM/toolschain/4.5.1/bin/arm-linux-
+
+# compiler
+CC = $(CROSS)gcc
+CFLAGS = -O3
+
+# linker
+LD = $(CROSS)ld
+LDFLAGS = #-elf2flat
+LDLIBS = -lm# -lz
+
+# strip
+STRIP = $(CROSS)strip
+
+# archive
+AR = $(CROSS)ar cr
+RANLIB = $(CROSS)ranlib
+
+### global defines ###
+######################
+
+# install directory
+#INSTALL_DIR = ../release/cramfs_with_drivers/sbin
+
+# libusb
+LIBUSB = libusb.a
+LIBUSB_OBJ = descriptors.o error.o linux.o usb.o
+
+# test libusb
+TESTLIBUSB = testlibusb
+TESTLIBUSB_OBJ = testlibusb.o
+
+# test bulk mode of libusb
+TESTBULK = testbulk
+TESTBULK_OBJ = testbulk.o
+
+### targets ###
+###############
+
+all: $(LIBUSB) $(TESTLIBUSB) $(TESTBULK)
+	$(STRIP) $(TESTLIBUSB)
+	$(STRIP) $(TESTBULK)
+#	-cp -f $(TESTLIBUSB) $(INSTALL_DIR)
+#	-cp -f $(TESTBULK) $(INSTALL_DIR)
+
+$(LIBUSB): $(LIBUSB_OBJ)
+	$(AR) $(LIBUSB) $(LIBUSB_OBJ)
+	$(RANLIB) $(LIBUSB)
+
+$(TESTLIBUSB): $(TESTLIBUSB_OBJ) $(LIBUSB)
+
+$(TESTBULK): $(TESTBULK_OBJ) $(LIBUSB)
+
+clean:
+	-rm -f *.o
+	-rm -f $(LIBUSB)
+	-rm -f $(TESTLIBUSB)
+	-rm -f $(TESTBULK)
+#	-rm -f $(INSTALL_DIR)/$(TESTLIBUSB)
+#	-rm -f $(INSTALL_DIR)/$(TESTBULK)
+
+.PHONY: all clean
+
