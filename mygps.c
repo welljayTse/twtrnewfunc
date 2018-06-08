@@ -303,7 +303,7 @@ unsigned char gpsinfoget(int fd)
 	}
 	else
 	{
-        GetLocalTime();
+        get_local_time();
         //printf("---------------go into gpstime deal-----------------\n");
 
         /* gps signal weak,use ntp time if network is ok */

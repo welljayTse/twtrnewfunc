@@ -318,7 +318,7 @@ void gxgk_init()
 		     if(ping() == 1){
 			     if (psh->localtime[0]< 2000){
 				     ntp_update();
-				     GetLocalTime();
+				     get_local_time();
 			     }
 			     sleep (60);
 			     continue;
@@ -448,7 +448,7 @@ void gxgk_init()
                         if (psh->heartbeat_check_count > 0){
                             saveinfo((unsigned char *)(&psh->gs_extrminfo_send),38,0);
                             udpsend(psh->gs_transferbuf,54); 
-                            ReissueInfoSend(38,2);
+                            reissue_info_send(38,2);
                         }
                         /* heartbeat break, just store offline package */
                         else{

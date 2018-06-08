@@ -201,7 +201,7 @@ int sdcard_format_check()
     /* check the format status of sdcard*/
     ret = access("/media/mmcblk0p1/.flag_file",F_OK);
     if(!ret){
-            return 0;
+        return 0;
     }
 
 	/* umount /media/mmcblk0p1 */
@@ -214,22 +214,22 @@ int sdcard_format_check()
     /* format mmcblk0p1 */
 	ret = storage_card_command(FORMAT_COMMAND);
     if (ret) {
-            printf("command:%s fail \n",FORMAT_COMMAND);
-            return -1;
+        printf("command:%s fail \n",FORMAT_COMMAND);
+        return -1;
     }
 
 	/* mount /media/mmcblk0p1 */
 	ret = storage_card_command(MOUNT_COMMAND);
 	if (ret) {
-		    printf("command:%s fail \n", MOUNT_COMMAND);
-		    return -1;
+        printf("command:%s fail \n", MOUNT_COMMAND);
+        return -1;
 	}
 
     /* creat .flag_file*/
 	ret = storage_card_command(TOUCH_COMMAND);
     if (ret){
-            printf("command:%s fail \n",TOUCH_COMMAND);
-            return -1;
+        printf("command:%s fail \n",TOUCH_COMMAND);
+        return -1;
     }
 
     printf("debug: sdcard was formated\n");
@@ -722,14 +722,14 @@ int sdcard_dir_check()
 
 	int i ,ret= 0;
 	for (i = 0; i < sizeof(directory)/sizeof(directory[0]); i++){
-            if(opendir(directory[i]))
-					continue;
-			ret = mkdir(directory[i], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
-			if (ret) {
-    				printf("mkdir %s fail \n", directory[i]);
-   					return -1;
-				}
-		}
+        if(opendir(directory[i]))
+                continue;
+        ret = mkdir(directory[i], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+        if (ret) {
+                printf("mkdir %s fail \n", directory[i]);
+                return -1;
+        }
+    }
 	return 0;
 
 }
@@ -740,8 +740,8 @@ int sdcard_info_check()
 
     ret = sdcard_format_check();
     if (ret){
-            printf("format check error!\n");
-            return -1;
+        printf("format check error!\n");
+        return -1;
     }
     
 	ret = sdcard_rw_check();
@@ -797,43 +797,43 @@ int storage_card_init()
 	printf("oooooooooooooooooo  sd card initial start  oooooooooooooooooooooooo\n");
 	printf("ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo\n");
 
-
-    /*1.check sdcard device existence*/
-    ret = storage_card_detect();
-    if(ret < 0){
-            printf("warning:no sdcard available\n");
-            return -1;
-    }
-    /* check the format status of sdcard*/
-    ret = access("/media/mmcblk0p1/.flag_file",F_OK);
-    if(!ret){
-            return 0;
-    }
-    /* umount /media/mmcblk0p1 */
-	ret = storage_card_command(UMOUNT_COMMAND);
-	if (ret) {
-	        printf("command:%s fail \n", UMOUNT_COMMAND);
-		    return -1;
-	}
+//    /*1.check sdcard device existence*/
+//    ret = storage_card_detect();
+//    if(ret < 0){
+//        printf("warning:no sdcard available\n");
+//        return -1;
+//    }
+//    /* check the format status of sdcard*/
+//    ret = access("/media/mmcblk0p1/.flag_file",F_OK);
+//    if(!ret){
+//        printf("mesg:sd card has been using\n");
+//        return 0;
+//    }
+//    /* umount /media/mmcblk0p1 */
+//	ret = storage_card_command(UMOUNT_COMMAND);
+//	if (ret) {
+//	        printf("command:%s fail \n", UMOUNT_COMMAND);
+//		    return -1;
+//	}
   //      ret = storage_card_format();
 
     /*2.check sdcard status*/
     ret = sdcard_info_check();
     if(ret < 0){
-            printf("error:sdcard check error\n");
-            return -1;
+        printf("error:sdcard check error\n");
+        return -1;
     }
-    printf("i = %d\n",sizeof(directory)/sizeof(directory[0]));
+    printf(" i = %d\n",sizeof(directory)/sizeof(directory[0]));
 
     for(i=0; i<sizeof(directory)/sizeof(directory[0]); i++){
-            sd_free_space += calc_directory_size(directory[i]); 
+        sd_free_space += calc_directory_size(directory[i]); 
     }
     sd_free_space += calc_sdcard_freesize("/media/mmcblk0p1/"); 
     
     printf("sd_free_space = %ld\n",sd_free_space);
 
 	printf("ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo\n");
-	printf("oooooooooooooooooo  sd card initial end  oooooooooooooooooooooooooo\n");
+	printf("oooooooooooooooooooo  sd card initial end  oooooooooooooooooooooooo\n");
 	printf("ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo\n");
 
     return 1;
@@ -856,8 +856,8 @@ int dump_info( char *path,int len, int type)
     bzero (buf,1024);
 
     if(!(fp = fopen(path,"rb"))){
-            printf("file %s open fail\n",path);
-            return -1;
+        printf("file %s open fail\n",path);
+        return -1;
     }
 
     if (type == 0){
@@ -887,31 +887,41 @@ int saveinfo(unsigned char *buf,int len,int type)
 {
     char save_path[128];
     char save_directory[128];
+    char delete_directory[128];
     FILE *fp;
     int ret = 0,i = 0;
-
+    int freesize =0; /* based on KBytes */
     bzero(save_path,128);
     bzero(save_directory,128);
-
-    if (calc_sdcard_freesize() < 20 * 1024){
+    bzero(delete_directory,128);
           
-    }
-
     switch (type){
     case 0: 
             sprintf(save_directory,"%s",directory[2]);
+            sprintf(delete_directory,"%s",directory[2]);
             break;
     case 1: 
             sprintf(save_directory,"%s",directory[3]);
+            sprintf(delete_directory,"%s",directory[3]);
             break;
     case 2: 
             sprintf(save_directory,"%s",directory[4]);
+            sprintf(delete_directory,"%s",directory[2]);
             break;
     case 3: 
             sprintf(save_directory,"%s",directory[5]);
+            sprintf(delete_directory,"%s",directory[3]);
             break;
     default:
             break;
+    }
+
+    freesize = calc_sdcard_freesize("/media/mmcblk0p1/");
+    printf("sd card freesize is %d\n",freesize);
+    /* test set sd card limit is 3GB */
+    if(freesize < 3871500){
+    //if(freesize < 1024 * 1024 * 3.6){
+          find_oldest_file_and_delete(delete_directory);
     }
 
  //   sprintf(save_path,"%s%04d-%02d-%02d-%02dh-%02dm-%02ds.log",save_directory,\
@@ -931,16 +941,18 @@ int saveinfo(unsigned char *buf,int len,int type)
         printf("file %s creat fail\n",save_path);
         return -1;
     }
-    /* show first 8 bytes ready */
-    for(i = 0;i <8;i++){
-        printf("buf[%d]= 0x%02x\n",i,*(buf+i));
-    }
+
     if (fwrite(buf,len,1,fp) != 1){
         printf("file %s save error\n",save_path);
         fclose(fp);
         return -1;
     }
-
+    /* debug : printf the store package detail info */
+    printf("Store OK : ");
+    for(i = 0;i <len;i++){
+        printf("0x%02x ",*(buf+i));
+    }
+    printf("-- total %d bytes\n",len);
     printf("%s -- save ok\n",save_path);
     fclose(fp);
 
@@ -952,7 +964,7 @@ int saveinfo(unsigned char *buf,int len,int type)
     return 0;
 }
 
-int DirCheckFileCounts(int type)
+int dir_check_file_counts(int type)
 {
     DIR *dirp = NULL;
     int num = 0;
@@ -960,7 +972,6 @@ int DirCheckFileCounts(int type)
 
     bzero(save_directory,128);
 
-  
     switch (type){
     case 0: 
             sprintf(save_directory,"%s",directory[2]);
@@ -1001,7 +1012,7 @@ int DirCheckFileCounts(int type)
  *  len  :  buf size
  *  type :  0:extrminfo,1:carinfo
  */
-int ReissueInfoSend(int len, int type)
+int reissue_info_send(int len, int type)
 {
     char save_directory[128];
     bzero(save_directory,128);
@@ -1023,7 +1034,7 @@ int ReissueInfoSend(int len, int type)
             break;
     }
 
-    if( DirCheckFileCounts(type) <=0 ){
+    if( dir_check_file_counts(type) <= 0 ){
         /* no data need to be reissue */
         printf("type %d is empty\n",type);
         return 0;

@@ -37,7 +37,7 @@
 
 char     revstr[];            		                 	// Receive buffer for byte2hexstr
 
-void GetLocalTime()
+void get_local_time()
 {
 	int i =0;
 	struct tm *ptm;
